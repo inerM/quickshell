@@ -98,9 +98,12 @@ Container {
     root.openMpris();
   }
 
-  // Pause/stop/player gone closes it; playback starting under the cursor opens it
+  // Player gone closes it; pausing while hovered keeps it open until unhover.
+  // Playback starting under the cursor opens it
   onMprisPlayingChanged: {
     if (!root.mprisPlaying) {
+      if (root.hovered && root.mpris && MprisManager.defaultPlayer)
+        return;
       root.closeMpris();
       return;
     }
@@ -638,7 +641,7 @@ Container {
     StyledText {
       anchors.fill: parent
       color: mediaHover.hovered ? Colors.gray9 : Colors.text
-      fontSize: 13
+      fontSize: 9
       horizontalAlignment: Qt.AlignHCenter
       propo: true
       text: mediaButton.glyph
