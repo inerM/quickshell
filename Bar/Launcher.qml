@@ -16,7 +16,7 @@ Scope {
     property bool emojiTried: false
 
     property string terminal: Quickshell.env("TERMINAL_BIN") || "kitty"
-    property string editor: Quickshell.env("EDITOR_BIN") || "nvim"
+    property string editor: Quickshell.env("EDITOR_BIN") || "hx"
 
     // text files in nvim
     function openFile(path) {
@@ -288,7 +288,7 @@ Scope {
             Rectangle {
                 anchors.fill: parent
                 radius: 2
-                color: Colors.base
+                color: "#0e0e0e"//Colors.base
                 border.width: 1
                 border.color: Colors.surface1
 

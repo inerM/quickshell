@@ -1,33 +1,33 @@
 .pragma library
 
-// Monochrome palette ported from a Catppuccin Mocha config.
-// Accents are named by their actual shade: gray1 (darkest) to gray14 (lightest).
+// Greek Noir neutrals from theme.nix.
+// Gray ramp: base0F → base05.
+let gray1 = "#8a8a8a";
+let gray2 = "#8e8e8e";
+let gray3 = "#929292";
+let gray4 = "#969696";
+let gray5 = "#999a99";
+let gray6 = "#9d9e9d";
+let gray7 = "#a1a2a1";
+let gray8 = "#a5a7a5";
+let gray9 = "#a9aba9";
+let gray10 = "#adafad";
+let gray11 = "#b0b3b0";
+let gray12 = "#b4b7b4";
+let gray13 = "#b8bbb8";
+let gray14 = "#bcbfbc";
 
-let gray1 = "#808080";
-let gray2 = "#848484";
-let gray3 = "#888888";
-let gray4 = "#8c8c8c";
-let gray5 = "#909090";
-let gray6 = "#949494";
-let gray7 = "#989898";
-let gray8 = "#9c9c9c";
-let gray9 = "#9e9e9e";
-let gray10 = "#a0a0a0";
-let gray11 = "#a4a4a4";
-let gray12 = "#a8a8a8";
-let gray13 = "#acacac";
-let gray14 = "#b8b8b8";
+let text = "#DBDEDA";      // base07
+let subtext1 = "#CCD0CF";  // base06
+let subtext0 = "#BCBFBC";  // base05
 
-let text = "#cdd6f4";
-let subtext1 = "#bac2de";
-let subtext0 = "#a6adc8";
+let overlay2 = "#92958E";  // comment
+let overlay1 = "#8A8A8A";  // base0F
+let overlay0 = "#757D75";  // base03
 
-let overlay2 = "#7e7e7e";
-let overlay1 = "#6e6e6e"; 
-let overlay0 = "#5e5e5e"; 
-let surface2 = "#4c4c4c";
-let surface1 = "#3c3c3c"; 
-let surface0 = "#303030";
-let base = "#242424";
-let mantle = "#1e1e1e";
-let crust = "#181818";
+let surface2 = "#4D4D4D";  // borderInactive
+let surface1 = "#333333";  // base02
+let surface0 = "#242424";  // base01
+let base = "#171717";      // base00
+let mantle = "#141414";    // bgDark
+let crust = "#121212";     // bgDarker
