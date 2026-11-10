@@ -12,7 +12,7 @@ Text {
   elide: Text.ElideRight
 
   font {
-    family: root.propo ? "GeistMono Nerd Font Propo" : "GeistMono Nerd Font"
+    family: root.propo ? "Iosevka Nerd Font Propo" : "Iosevka Nerd Font"  // "GeistMono Nerd Font Propo" : "GeistMono Nerd Font"
     pointSize: root.fontSize
     weight: root.fontWeight * 100
   }
