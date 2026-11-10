@@ -2,15 +2,15 @@
 
 <img src="assets/quickshell.svg" alt="quickshell" width="110">
 
-# inerM / quickshell
+# inert M / quickshell
 
-**a quiet bar and a launcher for niri**
+**Quiet, Quick, Cute, and Clean**
 
 <img src="https://img.shields.io/badge/QUICKSHELL-QML-333333?style=for-the-badge&logo=qt&logoColor=f25623&labelColor=181818" alt="Quickshell QML">
 <img src="https://img.shields.io/badge/COMPOSITOR-NIRI-333333?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ijc2IDM2IDExNCAyMDAiIGZpbGw9IiNmMjU2MjMiPjxwYXRoIGQ9Im0gMTY2LjAxMjI5LDIxMy4yNDUyNCBjIDAsOC4xMzg2NyAtNC4wNjkzMywxNi4yNzczMyAtMzIuNTU0NjUsMTYuMjc3MzMgLTI4LjQ4NTMxLDAgLTMyLjU1NDY1LC04LjEzODY2IC0zMi41NTQ2NSwtMTYuMjc3MzMgMCwtMTIuMjA3OTkgOC4xMzg2NywtMjAuMzQ2NjUgMzIuNTU0NjUsLTIwLjM0NjY1IDI0LjQxNTk5LDAgMzIuNTU0NjUsOC4xMzg2NiAzMi41NTQ2NSwyMC4zNDY2NSB6Ii8%2BPHBhdGggZD0ibSAxMDAuOTAyOTksNDIuMzMzMzM0IGMgMTYuMjc3MzMsMCA4MS4zODY2Miw0OC44MzE5NzggODEuMzg2NjIsODkuNTI1Mjg2IDAsMjcuNDY1MTkgLTEyLjg3MywzOS40ODI3OCAtMjQuMTM4MzQsNDQuNzQxMTcgLTguNTM0MTMsMy45ODM1MiAtMTAuODk4NTIsLTEuMzI4NDYgLTYuMTUxOTYsLTkuNTA1NjkgMy4xODkxNCwtNS40OTQxNyA1Ljg3NDMyLC0xMi4xNDM1MiA1Ljg3NDMyLC0xOC45NTgxNiAwLC0xMi4yMDc5OSAtNC4wNjkzMywtMjAuMzQ2NjUgLTEyLjIwNzk5LC0yOC40ODUzMSAtOC4xMzg2NywtOC4xMzg2NyAtMTguNTkyODQsLTEyLjIwODAxIC0yNC40MTU5OSwtMTIuMjA4IC04LjEzODY2LDFlLTUgLTEyLjIwNzk5LDIzLjkyMTUyIC0xMi4yMDc5OSwzNi42MjM5OCAwLDEwLjEyMTggMy4wMjExNiwxOS4yMzY1NSA2LjA1NzYyLDI1Ljg0MTMyIDIuODYzNzEsNi4yMjg5OSAwLjQ2NjM3LDEwLjUwNzM5IC01Ljk1Niw4LjE0NTI1IC03LjAxNjc3LC0yLjU4MDc2IC0xNS40MzA0OTMsLTcuNjczNjcgLTIwLjQ0ODI4MSwtMTcuNzA5MjUgLTguMTM4NjYxLC0xNi4yNzczMiAtNC4wNjkzMzEsLTM5LjcwMjEyIC00LjA2OTMzMSwtNjEuMDM5OTYyIDAsLTMyLjU1NDY0NyAtNmUtNiwtNTYuOTcwNjM0IDE2LjI3NzMyMiwtNTYuOTcwNjM0IHoiLz48L3N2Zz4K&labelColor=181818" alt="niri">
 
-Most Quickshell rices felt over-animated to me. This one stays out of the way:
-a thin bar that grows only when you touch it, and one launcher that does everything else.
+Most Quickshell rices felt over-animated, mid, bloat shit to me. This one stays out of the way:
+a thin bar that grows only when you touch it [Forked](https://git.voidarc.co.uk/quickshell), and one launcher(custom made) that does everything else.
 
 <img src="screenshots/s1.png" alt="launcher and media toast" width="860">
 
@@ -47,11 +47,14 @@ a thin bar that grows only when you touch it, and one launcher that does everyth
 - **Bar** with workspaces, clock, network, bluetooth and battery, each expanding into a small panel
 - **Media toast** with seek bar and controls, shown when you hover the clock while something plays
 - **Notifications** built in (it is the notification daemon, no extra service)
-- **Tablet mode** with a taller bar and back/forward buttons, toggled over IPC
-- Multi-monitor aware: one bar per screen, one launcher for the whole shell
-- Monochrome "Greek Noir" palette, single file to retheme
-
+- Monochrome "Greek Noir inspired" palette
+  
 ---
+
+[!Note]
+>this shell will only work with niri, if u want hyprland then refer [author](https://git.voidarc.co.uk/quickshell), else i dont know :)
+
+
 
 ## Launcher
 
@@ -84,7 +87,7 @@ Type part of a name (or a keyword like `sleep` or `restart`) in the apps mode.
 
 | Action | Does |
 | :--- | :--- |
-| logout, suspend, hibernate, reboot, shutdown | Session and power |
+| logout, suspend, hibernate(dead for now), reboot, shutdown | Session and power |
 | volume up / down, mute | `wpctl`, 5% steps, stays open so you can repeat |
 | brightness up / down | `brightnessctl`, 5% steps, stays open |
 | bluetooth on / off | `bluetoothctl power`, stays open |
@@ -129,7 +132,7 @@ There is no config file. Behaviour is changed with environment variables, IPC an
 Quickshell reads a config from a folder. Either run it by path, or link it as your default:
 
 ```bash
-git clone https://github.com/inerM/quickshell ~/.config/quickshell
+git clone https://codeberg.org/inerM/quickshell ~/.config/quickshell
 qs                      # default config
 # or from anywhere
 qs -p /path/to/quickshell
@@ -163,7 +166,7 @@ binds {
 
 Autostart with `spawn-at-startup "qs"`.
 
-On NixOS, the [inerM/nixos](https://github.com/inerM/nixos) flake builds and wraps all of this for you.
+On NixOS, the [inerM/nixos](https://codeberg.org/inerM/nixos) flake builds and wraps all of this for you.
 
 ---
 
@@ -178,7 +181,7 @@ On NixOS, the [inerM/nixos](https://github.com/inerM/nixos) flake builds and wra
 | System actions | `wireplumber` (`wpctl`), `brightnessctl`, `kitty`, `wifitui`, `bluetui`, `nightmode` |
 | Look | A monospace font and a [Nerd Font](https://www.nerdfonts.com) for the icons |
 
-`nightmode` is a small helper script, you can find it in [inerM/nixos](https://github.com/inerM/nixos/blob/main/system/nighlight.nix). Skip the actions you don't use, the rest keeps working.
+`nightmode` is a small helper script, you can find it in [inerM/nixos](https://codeberg.org/inerM/nixos/blob/main/OS/nighlight.nix). Skip the actions you don't use, the rest keeps working.
 
 ---
 
@@ -205,5 +208,10 @@ Workspaces come from niri's event stream (`niri msg --json event-stream`), so no
 The logos are the official [Quickshell](https://quickshell.org) and [niri](https://github.com/YaLTeR/niri) marks, recolored to a single color.
 
 ---
+## A note on AI
 
-*This `README.md` was auto-generated by Claude as a time saver.*
+>I used AI for debugging, cleanup and code comments/readme. The config itself was written by hand. I'm not against it, but pasting straight from an LLM defeats the point of open community.
+
+---
+
+*This `README.md` was auto-generated by Claude, so mind twice before commiting instructions, ;) lol.*
