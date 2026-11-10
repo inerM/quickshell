@@ -86,6 +86,7 @@ Container {
 		  color: buttonRoot.workspaceColors[buttonRoot.stateInt]
 
           CenteredText {
+                anchors.horizontalCenterOffset: -0.5
                 yOffset: -0.8
           text: buttonRoot.numerals[buttonRoot.modelData.idx] ?? buttonRoot.modelData.idx
 		  }
