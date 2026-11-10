@@ -38,6 +38,7 @@ Container {
 
 		StyledText {
 		  anchors.verticalCenter: parent.verticalCenter
+		  anchors.verticalCenterOffset: 1
 		  fontSize: 11
 		  horizontalAlignment: Text.AlignHCenter
 		  text: Math.round(BatteryManager.percent)

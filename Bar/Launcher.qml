@@ -306,7 +306,7 @@ Scope {
                             anchors.verticalCenter: parent.verticalCenter
                             text: "> "
                             color: root.accent
-                            font.family: "monospace"
+                            font.family: "Iosevka Nerd Font"
                             font.pixelSize: 15
                         }
                         TextInput {
@@ -314,7 +314,7 @@ Scope {
                             anchors { left: prompt.right; leftMargin: 10; right: parent.right
                                       verticalCenter: parent.verticalCenter }
                             color: Colors.text
-                            font.family: "monospace"
+                            font.family: "Iosevka Nerd Font"
                             font.pixelSize: 15
                             focus: true
                             onTextChanged: win.update()
@@ -350,7 +350,7 @@ Scope {
                             anchors.verticalCenter: parent.verticalCenter
                             text: (win.results.length ? list.currentIndex + 1 : 0) + "/" + win.results.length
                             color: Colors.overlay1
-                            font.family: "monospace"
+                            font.family: "Iosevka Nerd Font"
                             font.pixelSize: 12
                         }
                         Rectangle {
@@ -364,7 +364,7 @@ Scope {
                             anchors.verticalCenter: parent.verticalCenter
                             text: win.mode
                             color: Colors.overlay1
-                            font.family: "monospace"
+                            font.family: "Iosevka Nerd Font"
                             font.pixelSize: 12
                         }
                     }
@@ -400,7 +400,7 @@ Scope {
                                 text: modelData.name
                                 elide: Text.ElideRight
                                 color: parent.sel ? Colors.text : Colors.subtext0
-                                font.family: "monospace"
+                                font.family: "Iosevka Nerd Font"
                                 font.pixelSize: 14
                             }
                             Text {
@@ -409,6 +409,7 @@ Scope {
                                 text: modelData.sub
                                 elide: Text.ElideMiddle
                                 color: Colors.overlay1
+                                opacity: 0.4
                                 font.family: "monospace"
                                 font.pixelSize: 11
                             }

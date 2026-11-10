@@ -23,8 +23,8 @@ Container {
   property bool notified: false
 
   boxColor: Colors.gray5
-  boxHeight: 20
-  boxWidth: IpcManager.tabletMode ? 600 : 60
+  boxHeight: 19
+  boxWidth: IpcManager.tabletMode ? 600 : 44
   defaultItem: IpcManager.tabletMode ? tabletTime : time
   exclusiveMonitor: root.monitor
   exclusiveToScreen: true
@@ -641,7 +641,7 @@ Container {
     StyledText {
       anchors.fill: parent
       color: mediaHover.hovered ? Colors.gray9 : Colors.text
-      fontSize: 9
+      fontSize: 13
       horizontalAlignment: Qt.AlignHCenter
       propo: true
       text: mediaButton.glyph
